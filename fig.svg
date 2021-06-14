@@ -1,0 +1,27 @@
+<svg width='1200.00' height='500.00' xmlns='http://www.w3.org/2000/svg'>
+<rect x='0.000' y='0.000' width='1200.00' height='500.00' style='fill:rgb(0,0,252,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,0.000 600.000,250.000 0.000,0.000' style='fill:rgb(0,0,252,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,83.333 600.000,250.000 0.000,41.667' style='fill:rgb(0,0,216,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,166.667 600.000,250.000 0.000,83.333' style='fill:rgb(0,0,180,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,250.000 600.000,250.000 0.000,125.000' style='fill:rgb(0,0,144,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,333.333 600.000,250.000 0.000,166.667' style='fill:rgb(0,0,108,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,416.667 600.000,250.000 0.000,208.333' style='fill:rgb(0,0,72,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,0.000 600.000,250.000 0.000,0.000' style='fill:rgb(0,0,36,0.8); mix-blend-mode: screen;' />
+<polygon points='200.000,0.000 600.000,250.000 100.000,0.000' style='fill:rgb(0,0,0,0.8); mix-blend-mode: screen;' />
+<polygon points='400.000,0.000 600.000,250.000 200.000,0.000' style='fill:rgb(36,0,252,0.8); mix-blend-mode: screen;' />
+<polygon points='600.000,0.000 600.000,250.000 300.000,0.000' style='fill:rgb(36,0,216,0.8); mix-blend-mode: screen;' />
+<polygon points='800.000,0.000 600.000,250.000 400.000,0.000' style='fill:rgb(36,0,180,0.8); mix-blend-mode: screen;' />
+<polygon points='1000.000,0.000 600.000,250.000 500.000,0.000' style='fill:rgb(36,0,144,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,0.000 600.000,250.000 1200.000,0.000' style='fill:rgb(36,0,108,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,83.333 600.000,250.000 1200.000,41.667' style='fill:rgb(36,0,72,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,166.667 600.000,250.000 1200.000,83.333' style='fill:rgb(36,0,36,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,250.000 600.000,250.000 1200.000,125.000' style='fill:rgb(36,0,0,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,333.333 600.000,250.000 1200.000,166.667' style='fill:rgb(72,0,252,0.8); mix-blend-mode: screen;' />
+<polygon points='1200.000,416.667 600.000,250.000 1200.000,208.333' style='fill:rgb(72,0,216,0.8); mix-blend-mode: screen;' />
+<polygon points='0.000,500.000 600.000,250.000 0.000,500.000' style='fill:rgb(72,0,180,0.8); mix-blend-mode: screen;' />
+<polygon points='200.000,500.000 600.000,250.000 100.000,500.000' style='fill:rgb(72,0,144,0.8); mix-blend-mode: screen;' />
+<polygon points='400.000,500.000 600.000,250.000 200.000,500.000' style='fill:rgb(72,0,108,0.8); mix-blend-mode: screen;' />
+<polygon points='600.000,500.000 600.000,250.000 300.000,500.000' style='fill:rgb(72,0,72,0.8); mix-blend-mode: screen;' />
+<polygon points='800.000,500.000 600.000,250.000 400.000,500.000' style='fill:rgb(72,0,36,0.8); mix-blend-mode: screen;' />
+<polygon points='1000.000,500.000 600.000,250.000 500.000,500.000' style='fill:rgb(72,0,0,0.8); mix-blend-mode: screen;' />
+</svg>
