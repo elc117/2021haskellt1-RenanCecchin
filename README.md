@@ -24,5 +24,27 @@ genTriangles n (w,h) = xlist ++ ylist ++ (mirrorPos 'x' (w,h) xlist) ++ (mirrorP
     where xlist = [((a,b), center, (a,b/2)) | a <- [0], b <- [0, h/(fromIntegral (n-1)).. h - h/(fromIntegral (n-1))], center <- [(w/2, h/2)]]
           ylist = [((a,b), center, (a/2,b)) | a <- [0, w/(fromIntegral (n-1)).. w - w/(fromIntegral (n-1))], b <- [0], center <- [(w/2, h/2)]]
 ```
-Porém, com essa maneira de gerar triângulos há um problema: quando a resolução não é N por N sobram espaços vazios na imagem que não podem ser completados.
-Dito isso, eu adicionei um retângulo do tamanho da imagem
+Porém, com essa maneira de gerar triângulos há um problema: quando a resolução não é N por N sobram espaços vazios na imagem.
+Dito isso, eu adicionei um retângulo do tamanho da imagem para evitar espaços vazios e adicionar um efeito de transparência que
+fortalece a cor de todos os triângulos na imagem, e adiciona um efeito de transparência aos espaços que antes ficavam em branco.
+###### Geração das cores
+No quesito cores, eu optei por fazer um gradiente de cores que mudam conforme o número de triângulos desejados, com isso em mente
+eu criei 6 padrões diferentes para o gradiente que são escolhidos a partir do resto de uma divisão por 6, pois abrange 6 resultados diferentes.
+Além disso, a taxa de crescimento dos gradientes depende de quantos triângulos o usuário escolheu gerar.
+```haskell
+gradientPalette :: Int -> Float -> [(Int,Int,Int,Float)]
+gradientPalette n opacity
+    | nrandom == 0 = [(r,g,b,o) | r <- increaselist, g <- [0], b <- decreaselist, o <- [opacity]]
+    | nrandom == 1 = [(r,g,b,o) | r <- decreaselist, g <- [0], b <- increaselist, o <- [opacity]]
+    | nrandom == 2 = [(r,g,b,o) | r <- [0], g <- increaselist, b <- decreaselist, o <- [opacity]]
+    | nrandom == 3 = [(r,g,b,o) | r <- [0], g <- decreaselist, b <- increaselist, o <- [opacity]]
+    | nrandom == 4 = [(r,g,b,o) | r <- increaselist, g <- decreaselist, b <- [0], o <- [opacity]]
+    | otherwise = [(r,g,b,o) | r <- decreaselist, g <- increaselist, b <- [0], o <- [opacity]]
+    where gap = 255 `div` n
+          nrandom = n `mod` 6
+          decreaselist = [0, gap..255]
+          increaselist = reverse decreaselist
+```
+###### Referências
+- [Inspiração da imagem](http://pedagogiavivanarede.blogspot.com/2015/05/arte-abstrata-geometrica.html)
+- Ajuda do colega Guilherme Medeiros da Cunha
