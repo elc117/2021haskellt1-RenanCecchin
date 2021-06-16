@@ -47,4 +47,6 @@ gradientPalette n opacity
 ```
 ###### Referências
 - [Inspiração da imagem](http://pedagogiavivanarede.blogspot.com/2015/05/arte-abstrata-geometrica.html)
+- [Gradiente](https://pt.stackoverflow.com/questions/339339/percorrer-gradiente-de-cor-de-acordo-com-o-valor)
+- [Divisão da tela](https://stackoverflow.com/questions/7368926/division-in-haskell)
 - Ajuda do colega Guilherme Medeiros da Cunha
